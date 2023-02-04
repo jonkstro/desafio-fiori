@@ -4,7 +4,7 @@
     <Page id="page" title="{i18n>title}">
         <content>
             <FlexBox id="_IDGenFlexBox1" justifyContent="Center">
-                <Input id="_IDGenInput1" />
+                <Input id="_IDGenInput1" submit="onPressBuscar" />
                 <Button id="_IDGenButton1" text="Buscar" press="onPressBuscar" />
             </FlexBox>
             <List 
@@ -20,18 +20,7 @@
                             width="10em"
                             height="10em"
                         />
-                        <VBox id="_IDGenVBox1">
-                            <Link 
-                                id="_IDGenLink1" 
-                                text="{ModeloImagem>title}"
-                                href="{ModeloImagem>url}"
-                                target="_blank"
-                            />
-                            <Label 
-                                id="_IDGenLabel1"
-                                text="{ModeloImagem>provider/name}" 
-                            />
-                        </VBox>
+                        
                     </HBox>
                 </CustomListItem>
             </List>
